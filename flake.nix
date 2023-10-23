@@ -14,7 +14,7 @@
   in {
     overlays.default = _: prev: {
       grimblast = prev.callPackage ./grimblast {hyprland = null;};
-      hyprprop = prev.callPackage ./hyprprop {};
+      hyprprop = prev.callPackage ./hyprprop { hyprland = null;};
       scratchpad = prev.callPackage ./scratchpad {hyprland = null;};
       shellevents = prev.callPackage ./shellevents {hyprland = null;};
       try_swap_workspace = prev.callPackage ./try_swap_workspace {};
